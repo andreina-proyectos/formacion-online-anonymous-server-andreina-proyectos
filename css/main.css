@@ -1,5 +1,11 @@
 /* COMMON */
-body {}
+body {
+  background-image: url(../images/anonymous-server-background.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
 .page {}
 
 
@@ -13,7 +19,9 @@ body {}
 
 
 /* MENU */
-.nav {}
+.nav {
+  display:none;
+}
 .nav__items {}
 .nav__item {}
 .nav__link {}
