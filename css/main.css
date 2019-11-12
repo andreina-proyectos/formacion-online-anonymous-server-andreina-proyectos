@@ -11,6 +11,7 @@ body {
   background-position: center;
   background-size: cover;
   font-family: Arial;
+  overflow:hidden;
 }
 
 .page {
@@ -28,36 +29,86 @@ body {
   margin: 0 30px;
   display: flex;
   justify-content: flex-end;
-  margin-top:10px;
+  margin-top:30px;
 }
-.nav-trigger {}
+.nav-trigger {
+  background-color: transparent;
+  border:1px solid transparent;
+  position: absolute;
+  cursor: pointer;
+}
+
+.nav-trigger__img {
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.678);
+  padding: 10px;
+  border-radius: 3px;
+}
 
 /* MENU */
 .nav {
-  display:none;
+  -webkit-transition: .8s ease-in-out;
+  -moz-transition: .8s ease-in-out;
+  -o-transition: .8s ease-in-out;
+  transition: .8s ease-in-out;
+  position: absolute;
+  right:0;
+  top:0;
+  width:100%;
+  z-index:3;
 }
+
 .nav__items {
-  margin: 0 30px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  height: 100vh;
+  z-index: 100;
+  background-color: #473131ec;
+  padding:20 0px;
+  list-style: none;
 }
-.nav__item {}
-.nav__link {}
-.nav-close {}
+.nav__item {
+  margin:10px;
+}
+.nav__link {
+  text-decoration: none;
+  color:white;
+  font-family: 'Roboto Slab', serif;
+}
+.nav-close {
+  top:3%;
+  right: 6.3%;
+  z-index:1;
+  background-color: transparent;
+  border:1px solid transparent;
+  position: absolute;
+  cursor: pointer;
+}
 
-
-
+.nav-close__img {
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.678);
+  padding: 10px;
+  border-radius: 3px;
+}
 
 /* MAIN */
 .page__main {
   margin: 0 30px;
 }
 .page__wrapper {}
+
 .page__main-title {
   font-family: 'Roboto Slab', serif;
   font-weight: 500;
+  line-height: 40px;
   color:white;
   max-width: 150px;
   font-size: 30px;
-  padding-top:100px;
   text-transform: uppercase;
 }
 
@@ -75,3 +126,15 @@ body {
   text-align: center;
   border-radius: 5px;
 }
+
+.hidden {
+  -webkit-transition: .8s ease-in-out;
+  -moz-transition: .8s ease-in-out;
+  -o-transition: .8s ease-in-out;
+  transition: .8s ease-in-out;
+  right:-100%;
+}
+
+/* MEDIA QUERIES */
+
+@media(min-width: 768px){}
