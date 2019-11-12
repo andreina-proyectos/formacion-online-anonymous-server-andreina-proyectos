@@ -4,6 +4,11 @@
   padding:0;
 }
 
+* :focus {
+  outline: none;
+  border:2px solid #00f8fb;
+}
+
 body {
   background-image: url(../images/anonymous-server-background.jpg);
   height: 100vh;
@@ -45,6 +50,11 @@ body {
   border-radius: 3px;
 }
 
+.nav-trigger__img:hover {
+  border: 2px solid white;
+  border-radius: 3px;
+}
+
 /* MENU */
 .nav {
   -webkit-transition: .8s ease-in-out;
@@ -67,7 +77,7 @@ body {
   font-size: 20px;
   height: 100vh;
   z-index: 100;
-  background-color: #473131ec;
+  background-color: #473131f5;
   padding:20 0px;
   list-style: none;
 }
@@ -90,9 +100,14 @@ body {
 }
 
 .nav-close__img {
-  height: 30px;
+  height: 25px;
   background-color: rgba(0, 0, 0, 0.678);
   padding: 10px;
+  border-radius: 3px;
+}
+
+.nav-close__img:hover {
+  border: 2px solid white;
   border-radius: 3px;
 }
 
